@@ -10,6 +10,8 @@ RUN apt-get update && \
     apt-get -y install \
     wget 
 
+RUN apt-get install unzip
+
 # INSTALL JMETER BASE 
 RUN mkdir /jmeter
 WORKDIR /jmeter
